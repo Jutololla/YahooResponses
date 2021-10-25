@@ -12,7 +12,7 @@ public class AnswerDTO {
     private String questionId;
     @NotBlank
     private String answer;
-
+    private String id;
     private Integer position;
 
 
@@ -57,6 +57,14 @@ public class AnswerDTO {
 
     public void setAnswer(String answer) {
         this.answer = answer;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     @Override

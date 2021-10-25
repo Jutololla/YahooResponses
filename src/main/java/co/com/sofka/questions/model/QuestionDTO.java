@@ -39,6 +39,9 @@ public class QuestionDTO {
         this.category = category;
     }
 
+
+
+
     public List<AnswerDTO> getAnswers() {
         this.answers = Optional.ofNullable(answers).orElse(new ArrayList<>());
         return answers;

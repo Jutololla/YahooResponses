@@ -1,5 +1,6 @@
 package co.com.sofka.questions.usecases;
 
+import co.com.sofka.questions.mappers.MapperUtils;
 import co.com.sofka.questions.model.QuestionDTO;
 import co.com.sofka.questions.reposioties.QuestionRepository;
 import org.springframework.stereotype.Service;
@@ -13,6 +14,7 @@ import java.util.function.Supplier;
 public class ListUseCase implements Supplier<Flux<QuestionDTO>> {
     private final QuestionRepository questionRepository;
     private final MapperUtils mapperUtils;
+
 
     public ListUseCase(MapperUtils mapperUtils, QuestionRepository questionRepository) {
         this.questionRepository = questionRepository;
